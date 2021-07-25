@@ -4,8 +4,6 @@ export default function objectSample() {
   //   age: 28
   // }
   // a.name // aというobjectにはnameというプロパティがないとエラーが出る
-  //
-  // console.log("Object object sample 1:", a)
 
   // オブジェクトリテラル記法による型定義
   let country: {
@@ -40,4 +38,16 @@ export default function objectSample() {
   torahack.gender = 'male' // genderプロパティはオプショナルなので後から追加できる
 
   console.log('Object object sample 3:', torahack)
+
+  // インデックスシグネチャ
+  const capitals: {
+    [countryName: string]: string
+  } = {
+    Japan: 'Tokyo',
+    Korea: 'Seoul',
+  }
+  capitals.China = 'Beijing'
+  capitals.Canada = 'Ottawa'
+
+  console.log('Object object sample 4:', capitals)
 }
