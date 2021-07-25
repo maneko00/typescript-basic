@@ -23,4 +23,21 @@ export default function objectSample() {
     name: 'United States of America',
   }
   console.log('Object object sample 2:', country)
+
+  // オプショナル(?)なプロパティと読み取り専用(readonly)プロパティ
+  const torahack: {
+    age: number
+    lastName: string
+    readonly firstName: string
+    gender?: string
+  } = {
+    age: 28,
+    lastName: 'Yamada',
+    firstName: 'Tarou',
+  }
+  torahack.lastName = 'Kamado'
+  // torahack.firstName = 'Tanjiro' // firstNameプロパティはreadonlyなので再代入不可
+  torahack.gender = 'male' // genderプロパティはオプショナルなので後から追加できる
+
+  console.log('Object object sample 3:', torahack)
 }
