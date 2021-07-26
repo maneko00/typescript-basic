@@ -1,10 +1,6 @@
 export default function callbackSample() {
   const url = 'https://api.github.com/users/deatiger'
 
-  type Profile = {
-    login: string
-    id: number
-  }
   // コールバックで呼び出す非同期関数(fetch)
   const fetchProfile = () => {
     return fetch(url)
