@@ -27,4 +27,19 @@ export default function arraySample() {
   const someArray = generateSomeArray()
   // someArray.push(true) // generateSomeArray()は(string | number)[]の配列を返すと推論されるので、booleanは追加されない
   console.log('Array array sample 4:', someArray)
+
+  // 読み取り専用の配列
+  const commands: readonly string[] = ['git add', 'git commit', 'git push']
+  // commands.push("git fetch") // 追加不可
+  // commands[2] = "git pull" // 代入不可
+  console.log('Array array sample 5:', commands)
+
+  // 読み取り専用の定義方法
+  const immutableNumbers: ReadonlyArray<number> = [1, 2, 3]
+  // immutableNumbers.push(4) // NG
+  console.log('Array array sample 6:', immutableNumbers)
+
+  const immutableNames: Readonly<string[]> = ['Tarou', 'Kazu', 'Yuto']
+  // immutableNames.push("Takashi") // NG
+  console.log('Array array sample 7:', immutableNames)
 }
