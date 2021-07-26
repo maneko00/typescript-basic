@@ -37,7 +37,15 @@
 // tupleSample()
 
 // 07.ジェネリック型とポリモーフィズム
-import genericsSample from './generics/basic'
-import advancedSample from './generics/advanced'
-genericsSample()
-advancedSample()
+// import genericsSample from './generics/basic'
+// import advancedSample from './generics/advanced'
+// genericsSample()
+// advancedSample()
+
+// 10.非同期処理
+// import callbackSample from './asynchronous/callback'
+// import promiseSample from './asynchronous/promise'
+import asyncAwaitSample from './asynchronous/asyncAwait'
+// callbackSample()
+// promiseSample()
+asyncAwaitSample()
