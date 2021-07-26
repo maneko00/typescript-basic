@@ -43,5 +43,7 @@
 // advancedSample()
 
 // 10.非同期処理
-import callbackSample from './asynchronous/callback'
-callbackSample()
+// import callbackSample from './asynchronous/callback'
+import promiseSample from './asynchronous/promise'
+// callbackSample()
+promiseSample()
